@@ -1,8 +1,10 @@
 # Kryptos Support (Web)
 
-## Initial Recon w/ BurpSuite
+!(kryptos_support1.jpg)
 
-Examing source code and looking at the HTTP requests in Burp, found two endpoints:
+## Initial Recon
+
+Examing source code and looking at the HTTP requests in BurpSuite, found two endpoints:
 - `/api/tickets`
 - `/api/login`
 
