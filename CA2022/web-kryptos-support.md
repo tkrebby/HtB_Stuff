@@ -32,6 +32,8 @@ Manually put the cookie into your browser, and BOOM, we're logged in as `moderat
 
 Once logged in as `moderator`, we can see a link for a "Settings" page in the top left. This page allows you to change your password (without knowing the current password), and uses the endpoint: `/api/users/update`
 
+![Kryptos Password Change](kryptos_support3.png)
+
 Capturing a password change for our current session, Burp shows us the following information included in the POST request:
 
     {
@@ -43,10 +45,12 @@ Guessing the admin account may have a uid of 1, we use Burp repeater to send the
 
 
     {
-        "password":"test",
+        "password":"a",
         "uid":"1"
     }
     
-Now, delete your cookies, return to the `/login` page, and login as `admin:test`.
+![Kryptos BurpSuite POST](kryptos_support4.png)
+
+Now, delete your cookies, return to the `/login` page, and login as `admin:a`.
 
 There's your flag! `HTB{x55_4nd_id0rs_ar3_fun!!}`
