@@ -48,8 +48,6 @@ Guessing the admin account may have a uid of 1, we use Burp repeater to send the
         "password":"a",
         "uid":"1"
     }
-    
-![Kryptos BurpSuite POST](kryptos_support4.png)
 
 Now, delete your cookies, return to the `/login` page, and login as `admin:a`.
 
