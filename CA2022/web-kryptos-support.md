@@ -26,7 +26,7 @@ Checking our python3 web server, we can see we've now got a session cookie!
 
 Manually put the cookie into your browser, and BOOM, we're logged in as `moderator` and can see the list of support tickets at `/tickets`.
 
-![Kryptos Ticket Submission](kryptos_support2.png)
+![Kryptos Ticket List](kryptos_support2.png)
 
 ## Further Exploitation
 
