@@ -1,6 +1,6 @@
 # Kryptos Support (Web)
 
-!(kryptos_support1.jpg)
+![Kryptos Ticket Submission](kryptos_support1.png)
 
 ## Initial Recon
 
@@ -24,7 +24,9 @@ Checking our python3 web server, we can see we've now got a session cookie!
 
 `/?cookie=session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vZGVyYXRvciIsInVpZCI6MTAwLCJpYXQiOjE2NTI1MzQ4ODV9.JO12yEA44QxXgfUmL3n6Sm4Et2AJc5rkvXkvSMdmFOI`
 
-Manually put the cookie into your browser, and BOOM, we're logged in as `moderator` and can see the list of support tickets.
+Manually put the cookie into your browser, and BOOM, we're logged in as `moderator` and can see the list of support tickets at `/tickets`.
+
+![Kryptos Ticket Submission](kryptos_support2.png)
 
 ## Further Exploitation
 
