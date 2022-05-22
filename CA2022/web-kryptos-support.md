@@ -1,6 +1,6 @@
 # Kryptos Support (Web)
 
-![Kryptos Ticket Submission](kryptos_support1.png)
+![Kryptos Ticket Submission](images/kryptos_support1.png)
 
 ## Initial Recon
 
@@ -26,13 +26,13 @@ Checking our python3 web server, we can see we've now got a session cookie!
 
 Manually put the cookie into your browser, and BOOM, we're logged in as `moderator` and can see the list of support tickets at `/tickets`.
 
-![Kryptos Ticket List](kryptos_support2.png)
+![Kryptos Ticket List](images/kryptos_support2.png)
 
 ## Further Exploitation
 
 Once logged in as `moderator`, we can see a link for a "Settings" page in the top left. This page allows you to change your password (without knowing the current password), and uses the endpoint: `/api/users/update`
 
-![Kryptos Password Change](kryptos_support3.png)
+![Kryptos Password Change](images/kryptos_support3.png)
 
 Capturing a password change for our current session, Burp shows us the following information included in the POST request:
 
