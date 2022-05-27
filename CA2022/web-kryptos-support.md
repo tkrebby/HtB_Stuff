@@ -36,18 +36,21 @@ Once logged in as `moderator`, we can see a link for a "Settings" page in the to
 
 Capturing a password change for our current session, Burp shows us the following information included in the POST request:
 
-    {
-        "password":"test",
-        "uid":"100"
-    }
+```json
+{
+    "password":"test",
+    "uid":"100"
+}
+```
 
 Guessing the admin account may have a uid of 1, we use Burp repeater to send the following POST:
 
-
-    {
-        "password":"a",
-        "uid":"1"
-    }
+```json
+{
+    "password":"a",
+    "uid":"1"
+}
+```
 
 Now, delete your cookies, return to the `/login` page, and login as `admin:a`.
 
